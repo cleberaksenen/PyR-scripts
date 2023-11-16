@@ -3,3 +3,4 @@ Este repositório guarda scripts que desenvolvi para automação e desenvolvimen
 
 # Gráficos
 ## TrioHarmonico
+## Densidade
