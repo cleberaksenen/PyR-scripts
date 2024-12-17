@@ -3,7 +3,7 @@ library(ggplot2)
 dados <- read.csv("dados.csv", sep=";")
 
 #Graficos
-grafico <- ggplot(data = dados, aes(x = eixoX, y = eixoY, fill = eixoY)) +
+grafico <- ggplot(data = dados, aes(x = eixoX, y = eixoY, fill = eixoX)) +
   geom_violin(alpha = 0.5, position = position_dodge(width = 0.75), size = 1, color = NA) +
   geom_boxplot(notch = F, outlier.size = -1, color = "black", lwd = 1, alpha = 0.7, show.legend = F) +
   ggbeeswarm::geom_quasirandom(shape = 21, dodge.width = 0.75, color = "black", alpha = 0.5, show.legend = F) +
